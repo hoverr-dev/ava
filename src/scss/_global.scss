@@ -43,14 +43,14 @@
   line-height: 24px;
   text-transform: uppercase;
   border-radius: 30px;
+  color: var(--light-color);
 }
 .primary-button {
-  color: var(--light-color);
   background-color: var(--blue-color);
 }
 
 .secondary-button {
-  color: var(--tamago-orange-color);
+  background-color: var(--tamago-orange-color);
 }
 
 .primary-title {
