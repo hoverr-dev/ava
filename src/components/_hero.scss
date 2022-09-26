@@ -1,3 +1,54 @@
 .hero {
-  padding-top: 80px;
+  padding-top: 251px;
+  &-content {
+    position: relative;
+    display: flex;
+    &-left {
+      max-width: 485px;
+      &__title {
+        font-size: 56px;
+        line-height: 66px;
+        font-weight: 400;
+        margin-bottom: 52px;
+        letter-spacing: normal;
+      }
+      &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+      }
+      &__box {
+        display: flex;
+        flex-direction: column;
+      }
+      &__blockquote {
+        margin-bottom: 17px;
+      }
+      &__author {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      &__img {
+        &-rating {
+          width: 90px;
+          height: 18px;
+        }
+      }
+    }
+    &-right {
+      position: relative;
+      top: -65px;
+      right: 9px;
+      &__img {
+        &-triangle {
+          position: absolute;
+          right: -122px;
+          bottom: 4px;
+        }
+      }
+    }
+  }
 }
