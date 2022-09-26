@@ -1,0 +1,72 @@
+// Объявление шрифтов и параметров контейнера
+@mixin oswald-400 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+@mixin roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--content-offset);
+  max-width: var(--container-width);
+}
+
+.body {
+  @include oswald-400;
+  color: var(--primary-color);
+  &_hidden {
+    overflow: hidden;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+// Общие стили
+
+.primary-button,
+.secondary-button {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.primary-button {
+  color: var(--light-color);
+}
+
+.secondary-button {
+  color: var(--tamago-orange-color);
+}
+
+.primary-title {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: var(--blue-color);
+  text-transform: uppercase;
+}
+
+.descr {
+  @include roboto-400;
+  line-height: 26px;
+}

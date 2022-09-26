@@ -1,0 +1,12 @@
+:root {
+  //Основные настройки контейнера
+  --content-width: 1200px;
+  --content-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--content-offset) * 2));
+
+  // Добавление цвета
+  --primary-color: #000;
+  --light-color: #fff;
+  --blue-color: #0057ff;
+  --tamago-orange-color: #ffa332;
+}
