@@ -1,5 +1,6 @@
 .hero {
   padding-top: 251px;
+  padding-bottom: 287px;
   &-content {
     position: relative;
     display: flex;
@@ -39,16 +40,9 @@
       }
     }
     &-right {
-      position: relative;
-      top: -65px;
-      right: 9px;
-      &__img {
-        &-triangle {
-          position: absolute;
-          right: -122px;
-          bottom: 4px;
-        }
-      }
+      position: absolute;
+      top: -119px;
+      right: -98px;
     }
   }
 }
