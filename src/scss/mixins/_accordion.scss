@@ -1,44 +1,57 @@
 @mixin accordion {
   .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    max-width: 500px;
+    max-width: 498px;
+    min-height: 354px;
+    border: 1px solid var(--placebo-color);
+    margin-left: 21px;
+    padding: 30px 35px 0 40px;
     &-item {
       &__title {
-        min-height: 45px;
+        font-weight: 400;
+        min-height: 35px;
         display: flex;
         position: relative;
-        padding-left: 43px;
-        line-height: 42px;
+        font-size: 16px;
+        line-height: 28px;
+        text-transform: uppercase;
         cursor: pointer;
         &::before,
         &::after {
           position: absolute;
           content: "";
-          top: 18px;
-          left: 0;
-          width: 22px;
+          top: 13px;
+          right: -1px;
+          width: 18px;
           height: 2px;
-          background-color: orangered;
+          background-color: var(--blue-color);
         }
         &::before {
           transition: transform 0.3s ease-in-out;
         }
         &::after {
           transition: transform 0.3s, opacity 0.3s ease-in-out;
-          transform: rotate(0deg);
-          opacity: 0;
+          opacity: 1;
+          transform: rotate(90deg);
         }
         &.active {
           &::after {
-            opacity: 1;
-            transform: rotate(90deg);
+            opacity: 0;
+            transform: rotate(0deg);
           }
         }
+      }
+      &__descr {
+        font-size: 14px;
       }
       &__body {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
+        margin-bottom: 20px;
         &-content {
           margin-top: 12px;
           line-height: 1;
