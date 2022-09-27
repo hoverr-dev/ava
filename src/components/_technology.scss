@@ -1,0 +1,47 @@
+.technology {
+  &__wrapper {
+    max-width: 655px;
+    margin-bottom: 77px;
+  }
+  &__subtitle {
+    margin-bottom: 4px;
+  }
+  &__title {
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 39px;
+  }
+  &__box {
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+    }
+    &::before {
+      left: -120px;
+      top: 30px;
+      width: 100px;
+      height: 100px;
+      background-image: url(../img/grey-triangle.svg);
+    }
+    &::after {
+      right: -20px;
+      bottom: -54px;
+      width: 200px;
+      height: 200px;
+      background-image: url(../img/orange-triangle.svg);
+    }
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__link {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}
