@@ -1,5 +1,6 @@
 .products {
   padding-top: 149px;
+  padding-bottom: 230px;
   &-content {
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,7 @@
       max-width: 540px;
       min-height: 710px;
       box-shadow: 0px 10px 30px var(--box-shadow-form);
+      border-radius: 10px;
       &__img {
         margin-bottom: 31px;
       }
