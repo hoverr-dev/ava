@@ -86,14 +86,6 @@
   color: inherit;
 }
 
-.footer-link {
-  font-size: 12px;
-  line-height: 22px;
-  letter-spacing: 1px;
-  color: var(--light-color);
-  text-transform: uppercase;
-}
-
 .input,
 .form-button {
   @include roboto-400;
