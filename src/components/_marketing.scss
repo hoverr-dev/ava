@@ -1,0 +1,25 @@
+.marketing {
+  padding-top: 217px;
+  &-content {
+    max-width: 776px;
+    position: relative;
+    top: -133px;
+    &__inner {
+      position: absolute;
+      top: 133px;
+    }
+    &__subtitle {
+      margin-bottom: 23px;
+      font-size: 12px;
+    }
+    &__blockquote {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 37px;
+    }
+    &__button {
+      padding: 14px 40.7px;
+      margin-right: -2px;
+    }
+  }
+}
