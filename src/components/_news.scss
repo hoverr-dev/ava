@@ -1,0 +1,71 @@
+.news {
+  padding-bottom: 100px;
+  &__wrapper {
+    margin-bottom: 65px;
+  }
+  &__subtitle {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    &__wrapper {
+      display: grid;
+      gap: 16px;
+      max-width: 592px;
+    }
+    &__item {
+      position: relative;
+      display: flex;
+      column-gap: 30px;
+      border: 1px solid var(--wisteria-color);
+      border-radius: 10px;
+      padding: 20px 0 13px 20px;
+      &_marketing {
+        padding: 20px 0px 13px 16px;
+        min-height: 495px;
+      }
+    }
+    &__inner {
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    &__article {
+      max-width: 250px;
+      padding-top: 21px;
+      &_tutorial {
+        padding-top: 37px;
+      }
+    }
+    &__subtitle {
+      line-height: 18.5px;
+      &_marketing {
+        line-height: 8.5px;
+        letter-spacing: normal;
+      }
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 25px;
+      letter-spacing: normal;
+      &_marketing {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    &__descr {
+      max-width: 235px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &__box {
+      position: absolute;
+      max-width: 425px;
+      left: 50px;
+      bottom: 31px;
+    }
+  }
+}
