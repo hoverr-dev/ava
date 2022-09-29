@@ -1,13 +1,24 @@
-import Swiper, { Pagination } from 'swiper';
-
+import Swiper, { Navigation, Pagination, Keyboard } from 'swiper';
 export function slider() {
-  const swiper = new Swiper('.main-block', {
-    slidesPerView: 3,
+  const teamSlider = new Swiper('.team-slider', {
+    slidesPerView: 3.1526,
     slidesPerGroup: 3,
-    spaceBetween: 5,
+    loop: false,
+    spaceBetween: 18,
+    speed: 800,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+    },
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     },
-    modules: [Pagination],
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+    modules: [Navigation, Pagination, Keyboard],
   });
 }

@@ -1,0 +1,42 @@
+.team {
+  &__wrapper {
+    padding-bottom: 200px;
+  }
+  min-height: 405px;
+  &-slider {
+    width: 68.91%;
+    height: 405px;
+    margin: 0 auto;
+    margin-left: 361px;
+    &__slide {
+      max-width: 380px;
+      height: 298px;
+      padding-top: 46px;
+      border: 1px solid var(--placebo-color);
+      border-radius: 10px;
+    }
+    &__list {
+      max-width: 287px;
+    }
+    &__blockquote {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+    &__img {
+      margin-bottom: 20px;
+    }
+    &__name {
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+    &__position {
+      display: inline-block;
+      font-size: 13px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+  }
+}
