@@ -26,12 +26,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
         width: 540px;
         height: 200px;
         background-image: url(../img/products-img.png);
         background-repeat: no-repeat;
         // background-size: cover;
         margin-bottom: 31px;
+        border-radius: 10px 10px 0 0;
       }
       &__text {
         // position: absolute;
