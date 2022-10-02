@@ -17,6 +17,7 @@ export function burger() {
     link.addEventListener('click', () => {
       burgerActive.classList.toggle('burger_active')
       menuActive.classList.toggle('menu__list_active')
+      bodyHidden.classList.toggle('body_hidden')
     })
   })
 
