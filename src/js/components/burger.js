@@ -1,20 +1,28 @@
 export function burger() {
-  const burgerActive = document.querySelector('.burger');
+  const burgerActive = document.querySelector('.burger')
 
   burgerActive.addEventListener('click', () => {
-    burgerActive.classList.toggle('burger_active');
+    burgerActive.classList.toggle('burger_active')
   });
 
-  const menuActive = document.querySelector('.menu__list');
+  const menuActive = document.querySelector('.menu__list')
 
   burgerActive.addEventListener('click', () => {
-    menuActive.classList.toggle('menu__list_active');
-  });
+    menuActive.classList.toggle('menu__list_active')
+  })
 
-  //hidden scroll
+  const menuLinkActive = document.querySelectorAll('.menu__link')
+
+  menuLinkActive.forEach(link => {
+    link.addEventListener('click', () => {
+      burgerActive.classList.toggle('burger_active')
+      menuActive.classList.toggle('menu__list_active')
+    })
+  })
+
   const bodyHidden = document.body;
 
   burgerActive.addEventListener('click', () => {
-    bodyHidden.classList.toggle('body_hidden');
+    bodyHidden.classList.toggle('body_hidden')
   });
 }
