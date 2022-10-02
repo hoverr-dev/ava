@@ -1,5 +1,192 @@
 //Подключение медиа-запросов
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1869.98px) {
+  .news {
+    &::after {
+      display: none;
+    }
+  }
+  .design {
+    &-content {
+      &-right {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .news {
+    &-content {
+      &__item {
+        &_marketing {
+          padding: 20px 13px 13px 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1420.98px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    &-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      &-left {
+        &__title {
+          @include font-adaptive(66, 36);
+          margin-bottom: 20px;
+        }
+        &__inner {
+          margin-bottom: 15px;
+        }
+      }
+      &-right {
+        position: static;
+      }
+    }
+  }
+  .technology {
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+    &__title {
+      @include font-adaptive(40, 23);
+      margin-bottom: 20px;
+    }
+  }
+  .design {
+    padding-top: 50px;
+    &-content {
+      flex-direction: column;
+      align-items: center;
+      &-left {
+        margin-top: 0;
+        margin-bottom: 50px;
+        &__title {
+          @include font-adaptive(40, 23);
+          line-height: 45px;
+          margin-bottom: 20px;
+        }
+        &__descr {
+          margin-bottom: 20px;
+        }
+      }
+      &-right {
+        min-height: 830px;
+        &__img {
+          margin-bottom: 35px;
+        }
+        &__title {
+          margin-bottom: 20px;
+        }
+        &__article {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  .trusted {
+    padding-top: 100px;
+    &-content {
+      flex-direction: column;
+      align-items: center;
+      &-left {
+        order: 2;
+      }
+      &-right {
+        margin-right: 0;
+        &__title {
+          @include font-adaptive(40, 25);
+          margin-bottom: 20px;
+        }
+        &__descr {
+          margin-bottom: 40px;
+        }
+        .accordion {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .products {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    &-content {
+      flex-direction: column;
+      align-items: center;
+      &-left {
+        margin-top: 0;
+        &__title {
+          @include font-adaptive(40, 25);
+          margin-bottom: 20px;
+        }
+        &__descr {
+          margin-bottom: 20px;
+        }
+        .custom-sidebar {
+          margin-bottom: 20px;
+          &__item,
+          &__skills {
+            width: 100%;
+            max-width: 540px;
+          }
+        }
+      }
+    }
+  }
+  .team {
+    &-slider {
+      margin-left: 164px;
+    }
+  }
+  .social {
+    &-content {
+      &__list {
+        flex-wrap: wrap;
+      }
+      &__item {
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .news {
+    &-content {
+      &__item {
+        &_marketing {
+          padding: 20px 13px 13px 20px;
+          max-width: 550px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1229.98px) {
+  .news {
+    &-content {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      &__item {
+        width: 100%;
+        &_marketing {
+          max-width: 592px;
+        }
+      }
+    }
+  }
+  .technology {
+    &__box {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768.98px) {
   .header {
     &__wrapper {
       position: relative;
@@ -11,6 +198,9 @@
   }
   .burger {
     display: block;
+    &_active {
+      z-index: 3;
+    }
   }
   .menu {
     padding: 0 15px;
@@ -28,8 +218,9 @@
       right: 0;
       width: 100%;
       height: 100%;
-      background-color: grey;
+      background-color: var(--light-color);
       text-align: center;
+      z-index: 2;
       &_active {
         display: flex;
         flex-direction: column;
@@ -58,8 +249,200 @@
     &__link {
       font-size: 30px;
     }
+    &__button {
+      margin-right: auto;
+      z-index: 1;
+    }
   }
   .logo {
     z-index: 3;
+  }
+  .team {
+    &-slider {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 578.98px) {
+  .menu {
+    &__logo {
+      margin-right: 15px;
+    }
+    &__button {
+      padding: 14px 7.5px;
+      font-size: 12px;
+    }
+  }
+  .technology {
+    &__box {
+      &::after {
+        display: none;
+      }
+    }
+    &__wrapper {
+      margin-bottom: 30px;
+    }
+    &__title {
+      line-height: 35px;
+      margin-bottom: 20px;
+    }
+  }
+  .design {
+    &-content {
+      &-right {
+        &::before,
+        &::after {
+          display: none;
+        }
+        &__title {
+          @include font-adaptive(29, 25);
+        }
+        &__box {
+          width: 86%;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+        &__input {
+          &:nth-of-type(1),
+          &:nth-of-type(2) {
+            max-width: 100%;
+            width: 100%;
+            padding-left: 26px;
+          }
+          &:nth-last-child(3) {
+            width: 86%;
+          }
+        }
+      }
+      &-left {
+        &__inner {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .products {
+    &-content {
+      &-right {
+        width: 100%;
+      }
+    }
+  }
+  .accordion {
+    padding-left: 20px;
+  }
+  .team-slider .swiper-button-next {
+    display: none;
+  }
+  .marketing {
+    padding-top: 150px;
+    &-content {
+      &__blockquote {
+        @include font-adaptive(24, 18);
+      }
+      &__inner {
+        top: 90px;
+      }
+    }
+  }
+  .social {
+    padding-bottom: 50px;
+  }
+  .news {
+    padding-bottom: 50px;
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+    &__title {
+      @include font-adaptive(40, 28);
+    }
+    &-content {
+      &__item {
+        flex-direction: column;
+        padding: 20px 13px 13px 20px;
+        &_marketing {
+          max-width: 290px;
+          min-height: 250px;
+        }
+      }
+      &__box {
+        left: 35px;
+        bottom: 10px;
+      }
+      &__title {
+        &_marketing {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .footer {
+    &-top,
+    &-bottom {
+      flex-direction: column;
+    }
+    &-top {
+      padding-top: 30px;
+      padding-bottom: 15px;
+      &__logo {
+        margin-bottom: 15px;
+      }
+    }
+    &-bottom {
+      align-items: flex-start;
+      padding-bottom: 0;
+      &__created {
+        padding-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+    &-menu {
+      &__list {
+        flex-wrap: wrap;
+        column-gap: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 395.98px) {
+  .hero {
+    &-content {
+      &-left {
+        &__title {
+          line-height: 55px;
+        }
+      }
+    }
+  }
+  .products {
+    &-content {
+      &-right {
+        &__item {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+  .marketing {
+    min-height: 450px;
+  }
+  .news {
+    &-content {
+      &__item {
+        &_marketing {
+          max-width: 285px;
+        }
+      }
+    }
+  }
+  .accordion {
+    &-item {
+      &__title {
+        font-size: 14px;
+      }
+    }
   }
 }
