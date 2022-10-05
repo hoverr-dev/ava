@@ -16,7 +16,6 @@ export function burger() {
       bodyHidden.classList.add('body_hidden')
     } else {
       bodyHidden.classList.remove('body_hidden')
-
     }
   })
 
