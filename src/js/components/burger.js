@@ -1,14 +1,23 @@
 export function burger() {
   const burgerActive = document.querySelector('.burger')
+  const menuList = document.querySelector('.menu__list')
+  const menuListActive = document.querySelector('.menu__list_active')
 
   burgerActive.addEventListener('click', () => {
     burgerActive.classList.toggle('burger_active')
   });
 
-  const menuActive = document.querySelector('.menu__list')
-
   burgerActive.addEventListener('click', () => {
-    menuActive.classList.toggle('menu__list_active')
+    menuList.classList.toggle('menu__list_active')
+  })
+
+  menuList.addEventListener('click', () => {
+    if (menuListActive) {
+      bodyHidden.classList.add('body_hidden')
+    } else {
+      bodyHidden.classList.remove('body_hidden')
+
+    }
   })
 
   const menuLinkActive = document.querySelectorAll('.menu__link')
@@ -16,7 +25,7 @@ export function burger() {
   menuLinkActive.forEach(link => {
     link.addEventListener('click', () => {
       burgerActive.classList.toggle('burger_active')
-      menuActive.classList.toggle('menu__list_active')
+      menuList.classList.toggle('menu__list_active')
       bodyHidden.classList.toggle('body_hidden')
     })
   })
