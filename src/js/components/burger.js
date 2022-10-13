@@ -1,7 +1,6 @@
 export function burger() {
   const burgerActive = document.querySelector('.burger')
   const menuList = document.querySelector('.menu__list')
-  const menuListActive = document.querySelector('.menu__list_active')
 
   burgerActive.addEventListener('click', () => {
     burgerActive.classList.toggle('burger_active')
