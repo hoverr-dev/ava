@@ -11,15 +11,6 @@ export function burger() {
     menuList.classList.toggle('menu__list_active')
   })
 
-  menuList.addEventListener('click', () => {
-    if (menuListActive) {
-      bodyHidden.classList.add('body_hidden')
-    } else {
-      bodyHidden.classList.remove('body_hidden')
-
-    }
-  })
-
   const menuLinkActive = document.querySelectorAll('.menu__link')
 
   menuLinkActive.forEach(link => {
